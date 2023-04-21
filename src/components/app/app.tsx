@@ -21,8 +21,8 @@ function App() {
             <Link to="/">Home</Link>
             <Link to="/weather">Weather</Link>
             <Routes>
-                <Route path='/weather' element={<WeatherPage/>}/>
-                <Route path='/' element={<MainPage/>}/>
+                <Route path='/tinkoff-solution-cup-2023-2/weather' element={<WeatherPage/>}/>
+                <Route path='/tinkoff-solution-cup-2023-2/' element={<MainPage/>}/>
             </Routes>
         </div>
     );
