@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tinkoff-solution-cup-2023-2/static/css/main.7e1f2535.css",
-    "main.js": "/tinkoff-solution-cup-2023-2/static/js/main.1e4aeda9.js",
+    "main.js": "/tinkoff-solution-cup-2023-2/static/js/main.f083420c.js",
     "index.html": "/tinkoff-solution-cup-2023-2/index.html",
     "main.7e1f2535.css.map": "/tinkoff-solution-cup-2023-2/static/css/main.7e1f2535.css.map",
-    "main.1e4aeda9.js.map": "/tinkoff-solution-cup-2023-2/static/js/main.1e4aeda9.js.map"
+    "main.f083420c.js.map": "/tinkoff-solution-cup-2023-2/static/js/main.f083420c.js.map"
   },
   "entrypoints": [
     "static/css/main.7e1f2535.css",
-    "static/js/main.1e4aeda9.js"
+    "static/js/main.f083420c.js"
   ]
 }
