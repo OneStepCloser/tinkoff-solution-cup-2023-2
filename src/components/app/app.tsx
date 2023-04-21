@@ -1,5 +1,9 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import {Link, Route, Routes} from 'react-router-dom';
+
+import {MainPage} from '../../pages/main/main';
+import {WeatherPage} from '../../pages/weather/weather';
 
 import 'normalize.css';
 
@@ -14,7 +18,12 @@ function App() {
                     rel="stylesheet"
                 />
             </Helmet>
-            Hello world!
+            <Link to="/">Home</Link>
+            <Link to="/weather">Weather</Link>
+            <Routes>
+                <Route path='/weather' element={<WeatherPage/>}/>
+                <Route path='/' element={<MainPage/>}/>
+            </Routes>
         </div>
     );
 }
