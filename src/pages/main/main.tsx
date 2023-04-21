@@ -2,6 +2,6 @@ import React, { FC } from 'react';
 
 export const MainPage: FC = (props) => {
     return (
-        <div>Hello world! Kek</div>
+        <div>Hello world! Kek lol</div>
     );
 };
