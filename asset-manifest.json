@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tinkoff-solution-cup-2023/static/css/main.7e1f2535.css",
+    "main.js": "/tinkoff-solution-cup-2023/static/js/main.1e4aeda9.js",
+    "index.html": "/tinkoff-solution-cup-2023/index.html",
+    "main.7e1f2535.css.map": "/tinkoff-solution-cup-2023/static/css/main.7e1f2535.css.map",
+    "main.1e4aeda9.js.map": "/tinkoff-solution-cup-2023/static/js/main.1e4aeda9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e1f2535.css",
+    "static/js/main.1e4aeda9.js"
+  ]
+}
