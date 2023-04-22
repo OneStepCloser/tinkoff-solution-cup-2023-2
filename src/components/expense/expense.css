@@ -1,0 +1,30 @@
+.expense {
+    align-items: center;
+    display: contents;
+}
+
+.expense__cell {
+    padding: 12px;
+}
+
+.expense + .expense .expense__cell {
+    border-top: 1px solid #d2d2d2;
+}
+
+.expense__category {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.expense__category-badge {
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.expense__category-name {
+    font-size: 0.8em;
+    color: #676767;
+}

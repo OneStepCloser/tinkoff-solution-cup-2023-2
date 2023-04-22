@@ -13,7 +13,7 @@ export const CategoriesPage: FC = (props) => {
 
     return (
         <Page>
-            <h1>Категории расходов</h1>
+            <h2>Категории расходов</h2>
             {categories.map((category) => (
                 <Category
                     key={category.id}

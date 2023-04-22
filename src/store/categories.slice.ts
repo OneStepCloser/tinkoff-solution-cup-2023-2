@@ -14,17 +14,17 @@ export interface CategoriesState {
 
 const predefinedCategories = [
     {
-        id: uuid(),
+        id: '1',
         name: 'Рестораны и кафе',
         color: '#ff740e',
     },
     {
-        id: uuid(),
-        name: 'Одежда',
+        id: '2',
+        name: 'Одежда и обувь',
         color: '#6600d3',
     },
     {
-        id: uuid(),
+        id: '3',
         name: 'Супермаркеты',
         color: '#008d45',
     },
@@ -39,7 +39,7 @@ export const categoriesSlice = createSlice({
     initialState,
     reducers: {
         add: (state, action: PayloadAction<Omit<Category, 'id'>>) => {
-            const newCategory = { ...action.payload, id: uuid() };
+            const newCategory = {...action.payload, id: uuid()};
             state.categories = [...state.categories, newCategory]
         },
         // delete: (state, action: PayloadAction<Category['id']>) => {
