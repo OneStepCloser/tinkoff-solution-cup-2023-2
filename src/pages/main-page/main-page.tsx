@@ -1,4 +1,4 @@
-import React, {FC, useCallback, useMemo} from 'react';
+import React, {FC, useMemo} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 
 import {add} from '../../store/expenses.slice';
@@ -8,7 +8,8 @@ import {Page} from '../../components/page/page';
 import {Expense} from '../../components/expense/expense';
 import {Category} from '../../store/categories.slice';
 import {ExpenseList} from '../../components/expense-list/expense-list';
-import {ExpenseForm} from "../../components/expense-form/expense-form";
+import {ExpenseForm} from '../../components/expense-form/expense-form';
+import {formatDate} from '../../utils';
 
 export const MainPage: FC = () => {
     const expenses = useSelector((state: RootState) => state.expenses.expenses);
@@ -33,7 +34,7 @@ export const MainPage: FC = () => {
                     <Expense
                         amount={amount}
                         key={id}
-                        dateTime={dateTime}
+                        dateTime={formatDate(dateTime)}
                         text={name}
                         categoryColor={categoryId && categoriesMap[categoryId].color || null}
                         categoryName={categoryId && categoriesMap[categoryId].name || null}

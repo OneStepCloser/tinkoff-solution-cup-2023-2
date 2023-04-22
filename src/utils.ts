@@ -1,5 +1,5 @@
-import {urlPrefix} from './constants';
+import { format } from 'date-fns';
 
-export function getPath(url: string) {
-    return urlPrefix + url;
+export function formatDate(dateTimeString: string) {
+    return format(new Date(dateTimeString), 'dd.MM.yyyy');
 }

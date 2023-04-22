@@ -4,12 +4,12 @@ import {Link, Route, Routes} from 'react-router-dom';
 
 import {MainPage} from '../../pages/main-page/main-page';
 import {CategoriesPage} from '../../pages/categories-page/categories-page';
-
-import {getPath} from '../../utils';
+import {Header} from '../header/header';
+import {Nav} from '../nav/nav';
 
 import 'normalize.css';
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-import "primereact/resources/primereact.min.css";
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
 
 function App() {
     return (
@@ -22,8 +22,8 @@ function App() {
                     rel="stylesheet"
                 />
             </Helmet>
-            <Link to="/">Список Расходов</Link>
-            <Link to="/categories">Категории затрат</Link>
+            <Header />
+            <Nav />
             <Routes>
                 <Route path={'/categories'} element={<CategoriesPage/>}/>
                 <Route path={'/'} element={<MainPage/>}/>
