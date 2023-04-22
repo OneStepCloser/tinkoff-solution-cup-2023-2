@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import formatThousands from 'format-thousands';
 
 import './expense.css';
 
@@ -22,7 +23,7 @@ export const Expense: FC<ExpenseProps> = (props) => {
     return (
         <div className="expense">
             <div className="expense__amount expense__cell">
-                {amount} ₽
+                {formatThousands(amount, ' ')} ₽
             </div>
             <div className="expense__info expense__cell">
                 <div className="expense__name">

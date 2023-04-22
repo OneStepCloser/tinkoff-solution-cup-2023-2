@@ -1,7 +1,8 @@
 .nav {
     max-width: 800px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
     display: flex;
     gap: 24px;
-    margin-bottom: 24px;
 }

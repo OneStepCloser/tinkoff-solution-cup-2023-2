@@ -1,6 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
-import {Link, Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 import {MainPage} from '../../pages/main-page/main-page';
 import {CategoriesPage} from '../../pages/categories-page/categories-page';
