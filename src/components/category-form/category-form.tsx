@@ -20,7 +20,7 @@ export const CategoryForm: FC<CategoryFormProps> = (props) => {
 
     const handlePickColor = useCallback((e: ColorPickerChangeEvent) => {
         // @ts-ignore
-        setColor(e.value);
+        setColor(`#${e.value}`);
     }, [setColor]);
 
 
