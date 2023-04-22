@@ -2,8 +2,10 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 import {Link, Route, Routes} from 'react-router-dom';
 
-import {MainPage} from '../../pages/main/main';
-import {WeatherPage} from '../../pages/weather/weather';
+import {MainPage} from '../../pages/main-page/main-page';
+import {CategoriesPage} from '../../pages/categories-page/categories-page';
+
+import {getPath} from '../../utils';
 
 import 'normalize.css';
 
@@ -18,11 +20,11 @@ function App() {
                     rel="stylesheet"
                 />
             </Helmet>
-            <Link to="/">Home</Link>
-            <Link to="/weather">Weather</Link>
+            <Link to="/">Список Расходов</Link>
+            <Link to="/categories">Категории затрат</Link>
             <Routes>
-                <Route path='/tinkoff-solution-cup-2023-2/weather' element={<WeatherPage/>}/>
-                <Route path='/tinkoff-solution-cup-2023-2/' element={<MainPage/>}/>
+                <Route path={'/categories'} element={<CategoriesPage/>}/>
+                <Route path={'/'} element={<MainPage/>}/>
             </Routes>
         </div>
     );
