@@ -8,7 +8,3 @@
 `npm start` - запуск проекта
 
 После успешного запуска нужно открыть в браузере страницу по адресу [http://localhost:3000](http://localhost:3000)
-
-## Развернутый проект
-Задеплоенный проект доступен по адресу: https://onestepcloser.github.io/tinkoff-solution-cup-2023-2/
-
