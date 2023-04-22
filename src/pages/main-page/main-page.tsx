@@ -1,4 +1,4 @@
-import React, {FC, useMemo} from 'react';
+import React, {FC, useCallback, useMemo} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 
 import {add} from '../../store/expenses.slice';
@@ -8,8 +8,9 @@ import {Page} from '../../components/page/page';
 import {Expense} from '../../components/expense/expense';
 import {Category} from '../../store/categories.slice';
 import {ExpenseList} from '../../components/expense-list/expense-list';
+import {ExpenseForm} from "../../components/expense-form/expense-form";
 
-export const MainPage: FC = (props) => {
+export const MainPage: FC = () => {
     const expenses = useSelector((state: RootState) => state.expenses.expenses);
     const categories = useSelector((state: RootState) => state.categories.categories);
 
@@ -23,6 +24,10 @@ export const MainPage: FC = (props) => {
 
     return (
         <Page>
+            <ExpenseForm
+                categories={categories}
+                onAdd={(name, categoryId, amount) => dispatch(add({ name, categoryId, amount }))}
+            />
             <ExpenseList>
                 {expenses.map(({name, dateTime, categoryId, id, amount}) => (
                     <Expense
@@ -30,8 +35,8 @@ export const MainPage: FC = (props) => {
                         key={id}
                         dateTime={dateTime}
                         text={name}
-                        categoryColor={categoriesMap[categoryId].color}
-                        categoryName={categoriesMap[categoryId].name}
+                        categoryColor={categoryId && categoriesMap[categoryId].color || null}
+                        categoryName={categoryId && categoriesMap[categoryId].name || null}
                     />
                 ))}
             </ExpenseList>

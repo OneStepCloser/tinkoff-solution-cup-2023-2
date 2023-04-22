@@ -28,6 +28,11 @@ const predefinedCategories = [
         name: 'Супермаркеты',
         color: '#008d45',
     },
+    {
+        id: '4',
+        name: 'Другое',
+        color: '#8c8c8c',
+    },
 ];
 
 const initialState: CategoriesState = {

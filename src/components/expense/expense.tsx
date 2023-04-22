@@ -6,8 +6,8 @@ export interface ExpenseProps {
     amount: number;
     dateTime: string;
     text: string;
-    categoryColor: string;
-    categoryName: string;
+    categoryColor: string | null;
+    categoryName: string | null;
 }
 
 export const Expense: FC<ExpenseProps> = (props) => {
@@ -29,9 +29,11 @@ export const Expense: FC<ExpenseProps> = (props) => {
                     {text}
                 </div>
                 <div className="expense__category">
-                    <div className="expense__category-badge" style={{ backgroundColor: categoryColor }} />
+                    {categoryColor && (
+                        <div className="expense__category-badge" style={{ backgroundColor: categoryColor }} />
+                    )}
                     <div className="expense__category-name">
-                        {categoryName}
+                        {categoryName || 'Без категории'}
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ import type {RootState} from '../../store/store';
 import {Category} from '../../components/category/category';
 import {Page} from '../../components/page/page';
 
-export const CategoriesPage: FC = (props) => {
+export const CategoriesPage: FC = () => {
     const categories = useSelector((state: RootState) => state.categories.categories);
     const dispatch = useDispatch();
 

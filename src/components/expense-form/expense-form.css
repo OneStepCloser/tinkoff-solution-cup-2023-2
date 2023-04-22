@@ -1,0 +1,27 @@
+.expense__form {
+    margin-bottom: 16px;
+}
+
+.expense__form-fields {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.expense__form-name {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.expense__form-dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.expense__form-category-badge {
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin-right: 8px;
+}
