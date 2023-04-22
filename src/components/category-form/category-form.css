@@ -1,0 +1,16 @@
+.category-form__fields {
+    display: flex;
+    align-items: center;
+}
+
+.category-form__name {
+    margin-right: 8px;
+}
+
+.category-form__color {
+    margin-left: 8px;
+}
+
+.category-form__add-button {
+    margin-left: 48px;
+}

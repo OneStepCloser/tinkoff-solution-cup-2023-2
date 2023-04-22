@@ -27,19 +27,3 @@ export const CategoriesPage: FC = () => {
 
     );
 };
-
-// <div className="categories-page">
-//     <button
-//         aria-label="Increment value"
-//         onClick={() => dispatch(increment())}
-//     >
-//         Increment
-//     </button>
-//     <span>{count}</span>
-//     <button
-//         aria-label="Decrement value"
-//         onClick={() => dispatch(decrement())}
-//     >
-//         Decrement
-//     </button>
-// </div>

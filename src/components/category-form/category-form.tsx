@@ -27,18 +27,20 @@ export const CategoryForm: FC<CategoryFormProps> = (props) => {
     return (
         <div className="category-form">
             <h3>Добавить новую категорию</h3>
-            <div className="category-form__-fields">
+            <div className="category-form__fields">
                 <InputText
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Название"
-                    className="expense__form-name"
+                    className="category-form__name"
                 />
-                <ColorPicker value={color} onChange={handlePickColor} format="hex" />
-                <Button
-                    label="Добавить"
-                    onClick={() => onAdd(name,  color)}
-                />
+                <ColorPicker value={color} onChange={handlePickColor} format="hex" className="category-form__color"/>
+                <div className="category-form__add-button">
+                    <Button
+                        label="Добавить"
+                        onClick={() => onAdd(name,  color)}
+                    />
+                </div>
             </div>
         </div>
     );
